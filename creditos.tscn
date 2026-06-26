@@ -1,0 +1,56 @@
+[gd_scene format=3 uid="uid://ddo6e53y6dvc6"]
+
+[ext_resource type="Texture2D" uid="uid://bmioelf6urk75" path="res://imgCreditos.png" id="1_ilafw"]
+[ext_resource type="Script" uid="uid://bvkyrokiogli7" path="res://botao_voltar.gd" id="2_7flbs"]
+
+[node name="Creditos" type="Control" unique_id=1913154669]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=32631262]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_ilafw")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="Label" type="Label" parent="." unique_id=29210031]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 8.0
+offset_right = 564.0
+offset_bottom = 437.0
+theme_override_colors/font_color = Color(1, 0.92156863, 0.23137255, 1)
+theme_override_constants/shadow_offset_x = 3
+theme_override_constants/shadow_offset_y = 3
+theme_override_constants/outline_size = 6
+theme_override_constants/shadow_outline_size = 3
+theme_override_font_sizes/font_size = 32
+text = "	OBRIGADO POR JOGAR!
+Créditos:
+FILLIPE ESTEVES DOS REIS PAULA 
+JOSIANE BRITTO DA SILVA SOUZA
+MARINA MORAIS VASCONCELOS
+PEDRO FERREIRA DE OLIVEIRA 
+SOPHIA DE AZEVEDO 
+ VINÍCIUS ANTÔNIO CORRÊA LIMA
+MARQUES"
+
+[node name="botaoVoltar" type="Button" parent="." unique_id=1705235699]
+layout_mode = 0
+offset_left = 521.0
+offset_top = 537.0
+offset_right = 690.0
+offset_bottom = 568.0
+text = "MENU INICIAL"
+script = ExtResource("2_7flbs")
+
+[connection signal="pressed" from="botaoVoltar" to="botaoVoltar" method="_on_pressed"]

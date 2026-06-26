@@ -1,0 +1,66 @@
+[gd_scene format=3 uid="uid://ddiqxyo7texx0"]
+
+[ext_resource type="Script" uid="uid://8n6bk28buu6v" path="res://main_menu.gd" id="1_7vrkn"]
+[ext_resource type="Texture2D" uid="uid://cyhwqhuxywf4d" path="res://ChatGPT Image 12_06_2026, 07_28_42.png" id="2_7vrkn"]
+
+[node name="mainMenu" type="Control" unique_id=156061403]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_7vrkn")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=346458887]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_7vrkn")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="botaoJogar" type="Button" parent="." unique_id=1170384844]
+layout_mode = 0
+offset_left = 414.0
+offset_top = 295.0
+offset_right = 606.0
+offset_bottom = 333.0
+flat = true
+
+[node name="botaoOpcoes" type="Button" parent="." unique_id=2086048709]
+layout_mode = 0
+offset_left = 414.0
+offset_top = 351.0
+offset_right = 606.0
+offset_bottom = 389.0
+flat = true
+
+[node name="botaoCreditos" type="Button" parent="." unique_id=258633667]
+layout_mode = 0
+offset_left = 414.0
+offset_top = 407.0
+offset_right = 606.0
+offset_bottom = 445.0
+flat = true
+
+[node name="botaoSair" type="Button" parent="." unique_id=2065836630]
+layout_mode = 0
+offset_left = 413.0
+offset_top = 462.0
+offset_right = 605.0
+offset_bottom = 500.0
+flat = true
+
+[node name="Alertacontrucao" type="AcceptDialog" parent="." unique_id=810081370]
+title = "Aviso"
+dialog_text = "Tela em Construção
+"
+
+[connection signal="pressed" from="botaoJogar" to="." method="_on_botao_jogar_pressed"]
+[connection signal="pressed" from="botaoOpcoes" to="." method="_on_botao_opcoes_pressed"]
+[connection signal="pressed" from="botaoCreditos" to="." method="_on_botao_creditos_pressed"]
+[connection signal="pressed" from="botaoSair" to="." method="_on_botao_sair_pressed"]
