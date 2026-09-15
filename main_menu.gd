@@ -18,7 +18,7 @@ func _on_botao_jogar_pressed():
 	$Alertacontrucao.popup_centered()
 
 func _on_botao_opcoes_pressed():
-	$Alertacontrucao.popup_centered()
+	get_tree().change_scene_to_file("res://menu_opções.tscn")
 
 func _on_botao_creditos_pressed():
 	get_tree().change_scene_to_file("res://creditos.tscn")
