@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://ddiqxyo7texx0"]
 
-[ext_resource type="Script" uid="uid://8n6bk28buu6v" path="res://main_menu.gd" id="1_7vrkn"]
-[ext_resource type="Texture2D" uid="uid://cyhwqhuxywf4d" path="res://ChatGPT Image 12_06_2026, 07_28_42.png" id="2_7vrkn"]
+[ext_resource type="Script" uid="uid://8n6bk28buu6v" path="res://script/main_menu.gd" id="1_ekxnf"]
+[ext_resource type="Texture2D" uid="uid://cyhwqhuxywf4d" path="res://assets/fundo/ChatGPT Image 12_06_2026, 07_28_42.png" id="2_ekxnf"]
 
 [node name="mainMenu" type="Control" unique_id=156061403]
 layout_mode = 3
@@ -10,7 +10,12 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_7vrkn")
+script = ExtResource("1_ekxnf")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1573661500]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=346458887]
 layout_mode = 1
@@ -19,7 +24,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("2_7vrkn")
+texture = ExtResource("2_ekxnf")
 expand_mode = 1
 stretch_mode = 6
 
@@ -56,7 +61,9 @@ offset_bottom = 500.0
 flat = true
 
 [node name="Alertacontrucao" type="AcceptDialog" parent="." unique_id=810081370]
+oversampling_override = 1.0
 title = "Aviso"
+size = Vector2i(170, 106)
 dialog_text = "Tela em Construção
 "
 

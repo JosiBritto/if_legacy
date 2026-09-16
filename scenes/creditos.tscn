@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://ddo6e53y6dvc6"]
 
-[ext_resource type="Texture2D" uid="uid://bmioelf6urk75" path="res://imgCreditos.png" id="1_ilafw"]
-[ext_resource type="Script" uid="uid://bvkyrokiogli7" path="res://botao_voltar.gd" id="2_7flbs"]
+[ext_resource type="Texture2D" uid="uid://bmioelf6urk75" path="res://assets/fundo/imgCreditos.png" id="1_ilafw"]
+[ext_resource type="Script" uid="uid://bvkyrokiogli7" path="res://script/botao_voltar.gd" id="2_7flbs"]
 
 [node name="Creditos" type="Control" unique_id=1913154669]
 layout_mode = 3

@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://dfbhmfs1uxe1o"]
+
+[ext_resource type="Script" uid="uid://7hq8p8eibf5p" path="res://script/interactable.gd" id="1_56v82"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ikrs5"]
+radius = 60.0
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_56v82"]
+size = Vector2(50, 30)
+
+[node name="Interactable" type="Area2D" unique_id=1171741900]
+visibility_layer = 2
+script = ExtResource("1_56v82")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=578006648]
+shape = SubResource("CircleShape2D_ikrs5")
+
+[node name="Label" type="Label" parent="." unique_id=628398347]
+offset_left = -20.0
+offset_top = -40.0
+offset_right = 20.0
+offset_bottom = -17.0
+text = "E"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2093444434]
+texture = SubResource("PlaceholderTexture2D_56v82")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]

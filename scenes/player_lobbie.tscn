@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://cuajloun6i1p8"]
+
+[ext_resource type="Script" uid="uid://dxj2xp2e2vktf" path="res://script/player_lobbie.gd" id="1_ngpup"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_ve0sw"]
+size = Vector2(20, 20)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ikrs5"]
+
+[node name="Player_Lobbie" type="CharacterBody2D" unique_id=1219136181]
+script = ExtResource("1_ngpup")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=725592308]
+texture = SubResource("PlaceholderTexture2D_ve0sw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=39608428]
+light_mask = 2
+shape = SubResource("CircleShape2D_ikrs5")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1939768711]
+zoom = Vector2(2, 2)

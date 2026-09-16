@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Chest" format=3 uid="uid://c03r51bjo5bte"]
+
+[ext_resource type="Script" uid="uid://cpofltpx5mxl1" path="res://script/chest.gd" id="1_52c13"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_05k2f"]
+size = Vector2(70, 50)
+
+[resource]
+script = ExtResource("1_52c13")
+title = "small chest"
+icon = SubResource("PlaceholderTexture2D_05k2f")
+metadata/_custom_type_script = "uid://cpofltpx5mxl1"
