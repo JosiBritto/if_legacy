@@ -3,14 +3,15 @@
 [ext_resource type="Texture2D" uid="uid://btkgwwjixcnkp" path="res://assets/icon.svg" id="1_6rv8l"]
 [ext_resource type="Script" uid="uid://5wkf6jxribx7" path="res://script/bloco/modal_bloco.gd" id="1_rfusf"]
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ikrs5"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xx8tl"]
+bg_color = Color(0.2, 0.2, 0.2, 0.5176471)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ve0sw"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_csgyx"]
 bg_color = Color(0.17254902, 0.6, 0.6, 1)
 
-[node name="ModalBloco" type="Control" unique_id=1008086660]
+[node name="ModalBloco" type="Control" unique_id=1008086660 node_paths=PackedStringArray("descricaoTutorial", "tituloTutorial", "imagemTutorial")]
 custom_minimum_size = Vector2(1280, 720)
 layout_mode = 3
 anchors_preset = 8
@@ -27,6 +28,9 @@ grow_vertical = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 script = ExtResource("1_rfusf")
+descricaoTutorial = NodePath("Modal/MConteinerModal/ModalTutorial/Tutorial/MConteinerTutorial/HBoxTutorial/VBoxTutorialDescricao/DescricaoTutorialDesc")
+tituloTutorial = NodePath("Modal/MConteinerModal/ModalTutorial/Tutorial/MConteinerTutorial/HBoxTutorial/VBoxTutorialDescricao/TituloTutotrialDescricao")
+imagemTutorial = NodePath("Modal/MConteinerModal/ModalTutorial/Tutorial/MConteinerTutorial/HBoxTutorial/TutorialImagem")
 
 [node name="Modal" type="PanelContainer" parent="." unique_id=1010379590]
 layout_mode = 1
@@ -35,14 +39,14 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_styles/panel = SubResource("StyleBoxEmpty_ikrs5")
+theme_override_styles/panel = SubResource("StyleBoxFlat_xx8tl")
 
 [node name="MConteinerModal" type="MarginContainer" parent="Modal" unique_id=646905247]
 layout_mode = 2
-theme_override_constants/margin_left = 10
-theme_override_constants/margin_top = 10
-theme_override_constants/margin_right = 10
-theme_override_constants/margin_bottom = 10
+theme_override_constants/margin_left = 30
+theme_override_constants/margin_top = 30
+theme_override_constants/margin_right = 30
+theme_override_constants/margin_bottom = 30
 
 [node name="ModalTutorial" type="VBoxContainer" parent="Modal/MConteinerModal" unique_id=984979588]
 layout_mode = 2
@@ -69,6 +73,7 @@ unique_name_in_owner = true
 custom_minimum_size = Vector2(400, 400)
 layout_mode = 2
 size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.8
 texture = ExtResource("1_6rv8l")
 expand_mode = 1
 
@@ -90,7 +95,15 @@ vertical_alignment = 1
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_vertical = 3
+theme_override_font_sizes/normal_font_size = 24
+theme_override_font_sizes/bold_font_size = 24
+theme_override_font_sizes/bold_italics_font_size = 24
+theme_override_font_sizes/italics_font_size = 24
+theme_override_font_sizes/mono_font_size = 24
 text = "Lorem ipsum sit dolor amet"
+fit_content = true
+tab_size = 5
+horizontal_alignment = 1
 
 [node name="Acoes" type="PanelContainer" parent="Modal/MConteinerModal/ModalTutorial" unique_id=1879742168]
 layout_mode = 2
@@ -118,6 +131,7 @@ theme_override_font_sizes/font_size = 24
 text = "Sair"
 
 [node name="BtnIniciar" type="Button" parent="Modal/MConteinerModal/ModalTutorial/Acoes/MConteinerAcoes/HConteinerAcoes" unique_id=1836532736]
+unique_name_in_owner = true
 custom_minimum_size = Vector2(200, 0)
 layout_mode = 2
 theme_override_font_sizes/font_size = 24

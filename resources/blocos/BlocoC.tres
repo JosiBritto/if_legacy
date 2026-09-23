@@ -5,6 +5,8 @@
 
 [resource]
 script = ExtResource("1_pm4ed")
+descricaoTutorial = "Descrição bloco C"
+tituloTutorial = "Bloco C"
 title = "Bloco C"
 icon = ExtResource("1_ntjik")
 metadata/_custom_type_script = "uid://cpofltpx5mxl1"

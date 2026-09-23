@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://odn44l6nftf3" path="res://script/bloco/modalManagement.gd" id="1_ggvhr"]
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vtiu0"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_rfusf"]
 
 [node name="ModalManagement" type="Control" unique_id=823052648 node_paths=PackedStringArray("painel")]
 layout_mode = 3
@@ -24,4 +24,4 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
-theme_override_styles/panel = SubResource("StyleBoxEmpty_vtiu0")
+theme_override_styles/panel = SubResource("StyleBoxEmpty_rfusf")

@@ -1,10 +1,15 @@
 [gd_resource type="Resource" script_class="Bloco" format=3 uid="uid://d4gknam07usef"]
 
 [ext_resource type="Texture2D" uid="uid://btkgwwjixcnkp" path="res://assets/icon.svg" id="1_01mo6"]
+[ext_resource type="Texture2D" uid="uid://bmioelf6urk75" path="res://assets/fundo/imgCreditos.png" id="2_4ko13"]
 [ext_resource type="Script" uid="uid://cpofltpx5mxl1" path="res://script/bloco/bloco.gd" id="2_pqxcc"]
 
 [resource]
 script = ExtResource("2_pqxcc")
+descricaoTutorial = "descricao bloco B"
+tituloTutorial = "Titulo bloco B"
+image = ExtResource("2_4ko13")
+sceneMinigame = "res://scenes/main_menu.tscn"
 title = "Bloco B"
 icon = ExtResource("1_01mo6")
 metadata/_custom_type_script = "uid://cpofltpx5mxl1"

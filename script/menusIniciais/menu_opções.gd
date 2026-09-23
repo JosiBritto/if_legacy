@@ -5,14 +5,6 @@ extends Control
 func _ready() -> void:
 	get_window().size = Vector2i(1920, 1080)
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
-
-
-
-
 func _on_option_button_item_selected(index: int) -> void:
 	print(index)
 	match index:
