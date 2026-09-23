@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Bloco" format=3 uid="uid://c3fh86nu3kca"]
+
+[ext_resource type="Texture2D" uid="uid://2vavltw6pfiq" path="res://assets/Captura de tela 2026-09-23 011340.png" id="1_ntjik"]
+[ext_resource type="Script" uid="uid://cpofltpx5mxl1" path="res://script/bloco/bloco.gd" id="1_pm4ed"]
+
+[resource]
+script = ExtResource("1_pm4ed")
+title = "Bloco C"
+icon = ExtResource("1_ntjik")
+metadata/_custom_type_script = "uid://cpofltpx5mxl1"

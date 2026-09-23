@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://dc2n1kiwmhj1t"]
+
+[ext_resource type="Script" uid="uid://odn44l6nftf3" path="res://script/bloco/modalManagement.gd" id="1_ggvhr"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vtiu0"]
+
+[node name="ModalManagement" type="Control" unique_id=823052648 node_paths=PackedStringArray("painel")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+script = ExtResource("1_ggvhr")
+painel = NodePath("UI/Painel")
+
+[node name="UI" type="CanvasLayer" parent="." unique_id=868854267]
+
+[node name="Painel" type="PanelContainer" parent="UI" unique_id=1070772287]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_vtiu0")

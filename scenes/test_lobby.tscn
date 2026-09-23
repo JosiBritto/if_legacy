@@ -3,7 +3,8 @@
 [ext_resource type="PackedScene" uid="uid://cuajloun6i1p8" path="res://scenes/player_lobbie.tscn" id="1_tfmk2"]
 [ext_resource type="Texture2D" uid="uid://btkgwwjixcnkp" path="res://assets/icon.svg" id="2_67ebl"]
 [ext_resource type="PackedScene" uid="uid://dfbhmfs1uxe1o" path="res://scenes/interactable.tscn" id="2_ppq8t"]
-[ext_resource type="Resource" uid="uid://c03r51bjo5bte" path="res://resources/chest/chest_test.tres" id="4_vtiu0"]
+[ext_resource type="Resource" uid="uid://d4gknam07usef" path="res://resources/blocos/BlocoB.tres" id="4_vtiu0"]
+[ext_resource type="Resource" uid="uid://c3fh86nu3kca" path="res://resources/blocos/BlocoC.tres" id="5_05k2f"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ppq8t"]
 texture = ExtResource("2_67ebl")
@@ -39,3 +40,7 @@ position = Vector2(-2, 8)
 [node name="Interactable" parent="." unique_id=1171741900 instance=ExtResource("2_ppq8t")]
 position = Vector2(108, 89)
 item = ExtResource("4_vtiu0")
+
+[node name="Interactable2" parent="." unique_id=1978206316 instance=ExtResource("2_ppq8t")]
+position = Vector2(233, 189)
+item = ExtResource("5_05k2f")

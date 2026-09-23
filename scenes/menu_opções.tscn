@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://c4eqk1ygd2fjb"]
 
-[ext_resource type="Script" uid="uid://l0pa778jp7us" path="res://script/menu_opções.gd" id="1_eop3p"]
+[ext_resource type="Script" uid="uid://l0pa778jp7us" path="res://script/menusIniciais/menu_opções.gd" id="1_eop3p"]
 [ext_resource type="Texture2D" uid="uid://0agr0nbbkbh3" path="res://assets/fundo/WhatsApp Image 2026-06-10 at 15.14.08.jpeg" id="2_nyobm"]
 [ext_resource type="Script" uid="uid://bvkyrokiogli7" path="res://script/botao_voltar.gd" id="3_nyobm"]
 

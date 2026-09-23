@@ -15,9 +15,14 @@ run/main_scene="uid://ddiqxyo7texx0"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="res://assets/icon.svg"
 
+[autoload]
+
+ModalManagement="*uid://dc2n1kiwmhj1t"
+
 [display]
 
-window/size/viewport_width=1151
+window/size/viewport_width=1920
+window/size/viewport_height=1080
 window/stretch/mode="canvas_items"
 
 [input]
@@ -49,6 +54,7 @@ moves_down={
 
 [rendering]
 
+textures/canvas_textures/default_texture_filter=0
 rendering_device/driver.windows="d3d12"
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"

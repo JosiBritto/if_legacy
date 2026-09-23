@@ -1,0 +1,127 @@
+[gd_scene format=3 uid="uid://b2ttjm7tka42i"]
+
+[ext_resource type="Texture2D" uid="uid://btkgwwjixcnkp" path="res://assets/icon.svg" id="1_6rv8l"]
+[ext_resource type="Script" uid="uid://5wkf6jxribx7" path="res://script/bloco/modal_bloco.gd" id="1_rfusf"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ikrs5"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ve0sw"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_csgyx"]
+bg_color = Color(0.17254902, 0.6, 0.6, 1)
+
+[node name="ModalBloco" type="Control" unique_id=1008086660]
+custom_minimum_size = Vector2(1280, 720)
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -640.0
+offset_top = -360.0
+offset_right = 640.0
+offset_bottom = 360.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+script = ExtResource("1_rfusf")
+
+[node name="Modal" type="PanelContainer" parent="." unique_id=1010379590]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_ikrs5")
+
+[node name="MConteinerModal" type="MarginContainer" parent="Modal" unique_id=646905247]
+layout_mode = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="ModalTutorial" type="VBoxContainer" parent="Modal/MConteinerModal" unique_id=984979588]
+layout_mode = 2
+
+[node name="Tutorial" type="PanelContainer" parent="Modal/MConteinerModal/ModalTutorial" unique_id=604842739]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 6.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_ve0sw")
+
+[node name="MConteinerTutorial" type="MarginContainer" parent="Modal/MConteinerModal/ModalTutorial/Tutorial" unique_id=660933531]
+layout_mode = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="HBoxTutorial" type="HBoxContainer" parent="Modal/MConteinerModal/ModalTutorial/Tutorial/MConteinerTutorial" unique_id=1055330532]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="TutorialImagem" type="TextureRect" parent="Modal/MConteinerModal/ModalTutorial/Tutorial/MConteinerTutorial/HBoxTutorial" unique_id=181454254]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(400, 400)
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("1_6rv8l")
+expand_mode = 1
+
+[node name="VBoxTutorialDescricao" type="VBoxContainer" parent="Modal/MConteinerModal/ModalTutorial/Tutorial/MConteinerTutorial/HBoxTutorial" unique_id=219668503]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TituloTutotrialDescricao" type="Label" parent="Modal/MConteinerModal/ModalTutorial/Tutorial/MConteinerTutorial/HBoxTutorial/VBoxTutorialDescricao" unique_id=336197768]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+theme_override_font_sizes/font_size = 32
+text = "LOREM IPSUM"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="DescricaoTutorialDesc" type="RichTextLabel" parent="Modal/MConteinerModal/ModalTutorial/Tutorial/MConteinerTutorial/HBoxTutorial/VBoxTutorialDescricao" unique_id=1193828683]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+text = "Lorem ipsum sit dolor amet"
+
+[node name="Acoes" type="PanelContainer" parent="Modal/MConteinerModal/ModalTutorial" unique_id=1879742168]
+layout_mode = 2
+size_flags_vertical = 3
+offset_transform_enabled = true
+theme_override_styles/panel = SubResource("StyleBoxFlat_csgyx")
+
+[node name="MConteinerAcoes" type="MarginContainer" parent="Modal/MConteinerModal/ModalTutorial/Acoes" unique_id=433337967]
+layout_mode = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="HConteinerAcoes" type="HBoxContainer" parent="Modal/MConteinerModal/ModalTutorial/Acoes/MConteinerAcoes" unique_id=1211775107]
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 4
+theme_override_constants/separation = 20
+
+[node name="BtnSair" type="Button" parent="Modal/MConteinerModal/ModalTutorial/Acoes/MConteinerAcoes/HConteinerAcoes" unique_id=1055890802]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "Sair"
+
+[node name="BtnIniciar" type="Button" parent="Modal/MConteinerModal/ModalTutorial/Acoes/MConteinerAcoes/HConteinerAcoes" unique_id=1836532736]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "Iniciar"
+
+[connection signal="pressed" from="Modal/MConteinerModal/ModalTutorial/Acoes/MConteinerAcoes/HConteinerAcoes/BtnSair" to="." method="_on_btn_sair_pressed"]
+[connection signal="pressed" from="Modal/MConteinerModal/ModalTutorial/Acoes/MConteinerAcoes/HConteinerAcoes/BtnIniciar" to="." method="_on_btn_iniciar_pressed"]

@@ -5,7 +5,7 @@ extends Area2D
 		item = value;
 		item.node = self;
 		$Sprite2D.texture = value.icon;
-		
+			
 var enable : bool = false:
 	set(value): # controla a visibilidade da label
 		enable = value;
@@ -14,19 +14,21 @@ var enable : bool = false:
 func _ready() -> void:
 	enable = false;
 	name = item.title;
+	if item.icon == null:
+		$Sprite2D.texture = PlaceholderTexture2D;
 	
 func _input(event: InputEvent) -> void:
 	if event is InputEventKey and event.is_pressed() and enable: # filtra que tipo de input é; se é ´ressionada e se enabel está ativo
 		if event.keycode == KEY_E: # verifica se o keycode é "E"
-			print(name + " activaded.");
+			item.node = self;
 			if item:
 				item.activate();
 
 
-func _on_body_entered(body: Node2D) -> void:
+func _on_body_entered(_body: Node2D) -> void:
 	enable = true;
 
-func _on_body_exited(body: Node2D) -> void:
+func _on_body_exited(_body: Node2D) -> void:
 	enable = false;
 	if item:
 		item.de_activate();
