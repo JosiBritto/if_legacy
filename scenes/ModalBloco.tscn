@@ -11,7 +11,7 @@ bg_color = Color(0.2, 0.2, 0.2, 0.5176471)
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_csgyx"]
 bg_color = Color(0.17254902, 0.6, 0.6, 1)
 
-[node name="ModalBloco" type="Control" unique_id=1008086660 node_paths=PackedStringArray("descricaoTutorial", "tituloTutorial", "imagemTutorial")]
+[node name="ModalBloco" type="Control" unique_id=1008086660 node_paths=PackedStringArray("descricaoTutorial", "tituloTutorial", "imagemTutorial", "imagemDescTemp")]
 custom_minimum_size = Vector2(1280, 720)
 layout_mode = 3
 anchors_preset = 8
@@ -31,6 +31,7 @@ script = ExtResource("1_rfusf")
 descricaoTutorial = NodePath("Modal/MConteinerModal/ModalTutorial/Tutorial/MConteinerTutorial/HBoxTutorial/VBoxTutorialDescricao/DescricaoTutorialDesc")
 tituloTutorial = NodePath("Modal/MConteinerModal/ModalTutorial/Tutorial/MConteinerTutorial/HBoxTutorial/VBoxTutorialDescricao/TituloTutotrialDescricao")
 imagemTutorial = NodePath("Modal/MConteinerModal/ModalTutorial/Tutorial/MConteinerTutorial/HBoxTutorial/TutorialImagem")
+imagemDescTemp = NodePath("Modal/MConteinerModal/ModalTutorial/Tutorial/MConteinerTutorial/HBoxTutorial/Imagem_Desc_Temporario")
 
 [node name="Modal" type="PanelContainer" parent="." unique_id=1010379590]
 layout_mode = 1
@@ -77,7 +78,14 @@ size_flags_stretch_ratio = 0.8
 texture = ExtResource("1_6rv8l")
 expand_mode = 1
 
+[node name="Imagem_Desc_Temporario" type="TextureRect" parent="Modal/MConteinerModal/ModalTutorial/Tutorial/MConteinerTutorial/HBoxTutorial" unique_id=1044764315]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 1.23
+expand_mode = 1
+
 [node name="VBoxTutorialDescricao" type="VBoxContainer" parent="Modal/MConteinerModal/ModalTutorial/Tutorial/MConteinerTutorial/HBoxTutorial" unique_id=219668503]
+visible = false
 layout_mode = 2
 size_flags_horizontal = 3
 

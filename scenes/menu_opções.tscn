@@ -93,8 +93,8 @@ offset_bottom = 599.0
 text = "MENU INICIAL"
 script = ExtResource("3_nyobm")
 
-[connection signal="item_selected" from="OptionButton" to="." method="_on_option_button_item_selected"]
 [connection signal="item_selected" from="OptionButton" to="." method="_on_option_button_item_modoDeTela_selected"]
+[connection signal="item_selected" from="OptionButton" to="." method="_on_option_button_item_selected"]
 [connection signal="item_selected" from="OptionButtonResolucao" to="." method="_on_option_button_resolucao_item_selected"]
 [connection signal="value_changed" from="HSlider" to="." method="_on_h_slider_value_changed"]
 [connection signal="pressed" from="botaoVoltar" to="botaoVoltar" method="_on_pressed"]

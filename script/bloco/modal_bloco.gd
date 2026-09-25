@@ -5,6 +5,7 @@ class_name ModalBloco
 @export var descricaoTutorial : RichTextLabel;
 @export var tituloTutorial: Label;
 @export var imagemTutorial: TextureRect;
+@export var imagemDescTemp: TextureRect;
 
 var _velocityText: float = 0.01;
 

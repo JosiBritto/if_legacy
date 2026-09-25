@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://dfbhmfs1uxe1o" path="res://scenes/interactable.tscn" id="2_ppq8t"]
 [ext_resource type="Resource" uid="uid://d4gknam07usef" path="res://resources/blocos/BlocoB.tres" id="4_vtiu0"]
 [ext_resource type="Resource" uid="uid://c3fh86nu3kca" path="res://resources/blocos/BlocoC.tres" id="5_05k2f"]
+[ext_resource type="Resource" uid="uid://qbo3g2v8letx" path="res://resources/blocos/Teste.tres" id="6_k46wm"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ppq8t"]
 texture = ExtResource("2_67ebl")
@@ -44,3 +45,7 @@ item = ExtResource("4_vtiu0")
 [node name="Interactable2" parent="." unique_id=1978206316 instance=ExtResource("2_ppq8t")]
 position = Vector2(233, 189)
 item = ExtResource("5_05k2f")
+
+[node name="Interactable3" parent="." unique_id=724432689 instance=ExtResource("2_ppq8t")]
+position = Vector2(401, 71)
+item = ExtResource("6_k46wm")

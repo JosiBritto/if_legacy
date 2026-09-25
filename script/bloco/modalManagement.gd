@@ -26,6 +26,7 @@ func add_new_modal(bloco: Bloco):
 	modal.tituloTutorial.text = current_bloco.item.tituloTutorial;
 	modal.descricaoTutorial.text = current_bloco.item.descricaoTutorial;
 	modal.imagemTutorial.texture = current_bloco.item.image;
+	modal.imagemDescTemp.texture = current_bloco.item.imagemDescTemp;
 	painel.add_child(modal);
 
 func deActivate():
